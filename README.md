@@ -25,7 +25,8 @@ If ZLib is already installed, building can be performed similar to the following
     git clone https://github.com/samtools/htslib
     cd htslib/
     autoheader
-    autoconf 
+    git submodule update --init --recursive
+    autoreconf -i 
     ./configure
     make
     make install
